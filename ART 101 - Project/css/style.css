@@ -1,0 +1,144 @@
+body,
+html {
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+#nodes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Navigation Bar */
+#nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25; /* <- temp padding */
+}
+
+#title {
+  flex: 1;
+  text-align: center;
+  color: white;
+  font-size: 250%;
+}
+
+#title p {
+  font-size: 140%;
+}
+
+#temp {
+  padding: 10%;
+}
+/* Body Portion */
+#flex-container {
+  display: flex;
+  padding: 0px;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-1 {
+  position: relative;
+  flex: 1;
+  z-index: 2;
+}
+
+.double {
+  width: 80%;
+  margin-bottom: 1px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.head {
+  height: 100%;
+  width: 50%;
+  padding-bottom: 50%;
+  margin-bottom: 0;
+  cursor: pointer;
+  border: none;
+  background-color: none;
+  border-radius: 40em;
+  transition: transform 0.3s ease;
+}
+
+.enlarge {
+  height: 100%;
+  width: 75%;
+  padding-bottom: 100%;
+  cursor: pointer;
+  border: none;
+  background-color: none;
+  border-radius: 40em 40em 60em 60em;
+  transition: transform 0.3s ease;
+}
+
+.double:hover {
+  transform: scale(1.2);
+}
+
+.head:hover {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  z-index: 1;
+  display: none;
+}
+
+/* .darken-background {
+  background-color: rgba(0, 0, 0, 0.5);
+} */
+
+body.darken-background {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+}
+
+.divide-bar {
+  display: block;
+  padding: 50px;
+  background-color: #ccc;
+}
+
+.divide-bar h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 40px;
+}
+
+/* People/Facts */
+#person-1 {
+  margin: 0;
+}
+
+#person-2 {
+  margin: 0;
+}
+
+#person-3 {
+  margin: 0;
+}
+
+#person-4 {
+  margin: 0;
+}
+
+#person-5 {
+  margin: 0;
+}
