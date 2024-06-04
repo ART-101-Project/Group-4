@@ -56,3 +56,12 @@ document.addEventListener("DOMContentLoaded", function () {
     overlay.classList.remove("darken-background");
   });
 });
+
+// Hover popup
+document.getElementById("element").addEventListener("mouseover", function () {
+  document.getElementById("popup").style.display = "block";
+});
+
+document.getElementById("element").addEventListener("mouseout", function () {
+  document.getElementById("popup").style.display = "none";
+});
