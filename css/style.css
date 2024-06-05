@@ -1,3 +1,4 @@
+/* Website CSS reset */
 body,
 html {
   padding: 0px;
@@ -19,18 +20,18 @@ html {
   align-items: center;
   padding: 25; /* <- temp padding */
 }
-
+/* title "Group 4:" */
 #title {
   flex: 1;
   text-align: center;
   color: white;
   font-size: 250%;
 }
-
+/* title "AI Tech" */
 #title p {
   font-size: 140%;
 }
-
+/* popout area; space between people icons and title (labeled as temp just in case we want to rearrange it */
 #temp {
   padding: 10%;
 }
@@ -40,6 +41,7 @@ html {
   display: none;
   position: absolute;
   background-color: #fff;
+  /* temp border */
   border: 1px solid #ccc;
   padding: 10px;
   z-index: 1;
@@ -52,7 +54,7 @@ html {
   cursor: pointer;
 }
 
-/* Body Portion */
+/* People Portion */
 #flex-container {
   display: flex;
   position: relative;
@@ -63,21 +65,30 @@ html {
   text-align: center;
   align-items: center;
   justify-content: center;
+  /* temp border */
+  border: 1px red solid;
 }
 
+/* individual people (two seperate buttons merged together so there could be a gap between head and body */
 .box-1 {
   position: relative;
   flex: 1;
   z-index: 2;
+  /* temp border */
+  border: 1px blue solid;
 }
 
+/* another box over people which enlarges the head, can be removed */
 .double {
   width: 80%;
   margin-bottom: 1px;
   cursor: pointer;
   transition: transform 0.3s ease;
+  /* temp border */
+  border: 1px purple solid;
 }
 
+/* the circle which creates the head */
 .head {
   height: 100%;
   width: 50%;
@@ -88,8 +99,11 @@ html {
   background-color: none;
   border-radius: 40em;
   transition: transform 0.3s ease;
+  /* temp border */
+  border: 1px darkgreen solid;
 }
 
+/* body portion, underneath the head */
 .enlarge {
   height: 100%;
   width: 75%;
@@ -99,30 +113,32 @@ html {
   background-color: none;
   border-radius: 40em 40em 60em 60em;
   transition: transform 0.3s ease;
+  /* temp border */
+  border: 1px darkblue solid;
 }
-
+/* enlarges both head and body */
 .double:hover {
   transform: scale(1.2);
 }
-
+/* enlarges head again so it creates a little in and out effect when hoveering over just the head */
 .head:hover {
   transform: scale(1.1);
 }
-
+/* bar below people in order to provide a possible subject change and add more details below or inside of it */
 .divide-bar {
   display: block;
   padding: 25px;
   color: white;
   background-color: #ccc;
 }
-
+/* subject change title */
 .divide-bar h1 {
   padding: 0;
   margin: 0;
   font-size: 40px;
 }
 
-/* People/Facts */
+/* People/Facts (this gives each person an ID so we can style it further, can be removed if need be) */
 #person-1 {
   margin: 0;
 }

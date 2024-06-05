@@ -1,7 +1,7 @@
 // index.js -
 // Author: Manuel S Marshutz <mmarshut@ucsc.edu>, ...
 // Date: 26 May 2024
-// Background Nodes (CONTORLS) source: https://github.com/rohanrhu/nodes.js/blob/master/js/nodes.js
+// Background Nodes (CONTORLS for background) source: https://github.com/rohanrhu/nodes.js/blob/master/js/nodes.js
 var nodesjs = new NodesJs({
   id: "nodes",
   width: window.innerWidth,
@@ -38,7 +38,7 @@ var nodesjs = new NodesJs({
 //   });
 // });
 
-// new script which has been simplified!
+// new script which has been simplified! (NOT WORKING, this was to darken everything that's not activley being hovered over)
 document.addEventListener("DOMContentLoaded", function () {
   const box1 = document.querySelector(".box-1");
   const overlay = box1.nextElementSibling;
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Hover popup
+// JavaSCript for Hover popup content
 document.getElementById("element").addEventListener("mouseover", function () {
   document.getElementById("popup").style.display = "block";
 });
