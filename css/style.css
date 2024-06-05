@@ -56,12 +56,13 @@ html {
 
 /* People Portion */
 #flex-container {
+  width: 75%;
   display: flex;
   position: relative;
   padding: 0px;
   padding-bottom: 40px;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -88,7 +89,7 @@ html {
   border: 1px purple solid;
 }
 
-/* the circle which creates the head */
+/* the circle which creates the head 
 .head {
   height: 100%;
   width: 50%;
@@ -99,8 +100,27 @@ html {
   background-color: none;
   border-radius: 40em;
   transition: transform 0.3s ease;
+  /* temp border 
+  border: 1px darkgreen solid;
+} */
+
+#personhead {
+  justify-self: center;
+  height: 100%;
+  width: 60%;
+  transition: transform 0.3s ease;
   /* temp border */
   border: 1px darkgreen solid;
+}
+
+#robothead {
+  justify-self: center;
+  height: 100%;
+  width: 60%;
+  transition: transform 0.3s ease;
+  /* temp border */
+  border: 1px darkgreen solid;
+  padding-top: 30px;
 }
 
 /* body portion, underneath the head */
@@ -124,6 +144,8 @@ html {
 .head:hover {
   transform: scale(1.1);
 }
+
+
 /* bar below people in order to provide a possible subject change and add more details below or inside of it */
 .divide-bar {
   margin: auto;
