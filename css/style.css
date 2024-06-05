@@ -18,7 +18,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 25; /* <- temp padding */
+  padding-bottom: 80px; /* <- temp padding */
 }
 /* title "Group 4:" */
 #title {
@@ -126,10 +126,16 @@ html {
 }
 /* bar below people in order to provide a possible subject change and add more details below or inside of it */
 .divide-bar {
+  margin: auto;
+  text-align: center;
+  width: 75%;
   display: block;
+  border-radius: 10px;
   padding: 25px;
   color: white;
-  background-color: #ccc;
+  /*background for subject at 50% opacity*/
+  background-color: rgb(204, 204, 204, .5);
+  
 }
 /* subject change title */
 .divide-bar h1 {
