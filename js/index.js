@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// JavaSCript for Hover popup content
+// JavaSCript for Hover popup content; W3SCHOOLS
 document.getElementById("element").addEventListener("mouseover", function () {
   document.getElementById("popup").style.display = "block";
 });
