@@ -5,7 +5,7 @@ html {
   margin: 0px;
   font-family: "Roboto", sans-serif;
 }
-
+/* NODES LAYOUT / BACKGROUND */
 #nodes {
   position: fixed;
   top: 0;
@@ -13,38 +13,52 @@ html {
   z-index: -1;
 }
 
-/* "NavIgatIOn BAr" */
-#nav-container {
+/* title container; "Group 4: AI Technology" */
+#container-title {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 25; /* <- temp padding */
 }
-/* title "Group 4:" */
+
+#container-title h1,
+p {
+  display: inline-block;
+}
+
+/* title properties: alignment, size, color ["Group 4:"] */
 #title {
   flex: 1;
   text-align: center;
   color: white;
-  font-size: 250%;
+  font-size: 2vw;
 }
-/* title "AI Tech" */
+/* title properties: alignment, size, color ["AI Technology"] */
 #title p {
-  font-size: 140%;
-}
-/* popout area; space between people icons and title (labeled as temp just in case we want to rearrange it */
-#temp {
-  padding: 10%;
+  font-size: 3vw;
 }
 
-/* pop/hover element(s) & section (guidance from CHATGPT) */
+/* popup elements: sizing, arrangement (z-index) */
+#container-popup {
+  display: flex;
+}
+
 .popup {
+  flex: 1;
   display: none;
   position: absolute;
-  background-color: #fff;
-  /* temp border */
-  border: 1px solid #ccc;
   padding: 10px;
+  padding-left: 5%;
   z-index: 1;
+}
+
+.popup img {
+  display: flex;
+  width: 20%;
+}
+
+#temp {
+  padding: 10%;
 }
 
 .hover-element {
@@ -59,6 +73,7 @@ html {
   display: flex;
   position: relative;
   padding: 0px;
+  padding-top: 5%;
   padding-bottom: 40px;
   margin-left: 5%;
   margin-right: 5%;
@@ -90,7 +105,6 @@ html {
 
 /* the circle which creates the head */
 .head {
-  height: 100%;
   width: 50%;
   padding-bottom: 50%;
   margin-bottom: 0;
@@ -105,7 +119,6 @@ html {
 
 /* body portion, underneath the head */
 .enlarge {
-  height: 100%;
   width: 75%;
   padding-bottom: 100%;
   cursor: pointer;
@@ -127,15 +140,19 @@ html {
 /* bar below people in order to provide a possible subject change and add more details below or inside of it */
 .divide-bar {
   display: block;
-  padding: 25px;
-  color: white;
-  background-color: #ccc;
+  padding: 15px;
+  padding-left: 5%;
+  background-color: white;
+  color: black;
+  font-size: 10vw; /* Responsive font size */
+  font-weight: bold;
+  mix-blend-mode: screen; /* This makes the cutout text possible */
 }
 /* subject change title */
 .divide-bar h1 {
   padding: 0;
   margin: 0;
-  font-size: 40px;
+  font-size: 2vw;
 }
 
 /* People/Facts (this gives each person an ID so we can style it further, can be removed if need be) */
@@ -157,4 +174,50 @@ html {
 
 #person-5 {
   margin: 0;
+}
+
+/* information continued...  EACH PARENT/CHILD DIV IS MADE SO THE ELEMENTS CAN SLIDE IN FROM LEFT/RIGHT. can be continued if desired. */
+
+#information-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.information-section {
+  background-color: var(--clr);
+  color: white;
+  display: flex;
+  width: 80%;
+  height: 175px;
+  margin: 5px;
+  transform: translateX(400%);
+  transition: transform 0.8s ease;
+  border: 1px red solid;
+}
+
+.information-section:nth-of-type(even) {
+  transform: translateX(-400%);
+  width: 80%;
+  font-size: 1.5vw;
+}
+
+.information-section:not(:first-of-type):nth-of-type(odd) {
+  transform: translateX(400%);
+  width: 80%;
+  font-size: 1.5vw;
+}
+
+#information-start {
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+.slide-left {
+  transform: translateX(-200%);
+}
+
+.information-section.show {
+  transform: translateX(0);
 }
