@@ -190,14 +190,75 @@
         <div id="section2" class="hidden-text">
           <p>The main images that we utilized for AI Technology, of the people and the robot were hand-drawn using Abode Illstrator 
              and then converted into vector images. After they were converted, Sav linked them directly into our HTML and to help
-             ensure that they were all aligned with one another fit them into a flex contianer/flex box. </p>
+             ensure that they were all aligned with one another fit them into a flex container/flexbox. </p>
         </div>
         <div id=section3" class=hidden-text">
           <p>The...</p>
         </div>d
         <div id=section3" class="hidden-text">
           <p>...</p>
-        </div>  
-    </section>
-</body>
-</html>
+        </div> 
+
+        <script>
+          // Javascript to toggle visibility of text section when links are clicked
+          document.getElementById('link1').addEventListener('click', function() {
+            toggleSelectionVisibility('section1');
+          });
+
+          document.getElementById('link2').addEventListener('click', function() {
+            toggleSelectionVisibility('section2');
+          });
+
+          document.getElementById('link3').addEventListener('click', function() {
+            toggleSelectionVisibility('section3');
+          });
+
+          document.getElementById('link4').addEventListener('click', function() {
+            toggleSelectionVisibility('section4');
+          });
+
+          // Function to toggle visibility of text sections
+          function toogleSelectionVisibility(sectionId) {
+            var section = document.getElementId(sectionId);
+            var sections = document.getElementsByClassName('hidden-text');
+            // Hide all text sections except the one clicked 
+            for (var i = 0; i < section. length; i++) {
+              if (section[i].id !== sectionId) {
+                sections[i].style.display = 'none';
+              }
+            }
+            // Toggle visibility of the clicked text section
+            if (section.style.display === 'none' || section.style.display === '') {
+                                      section.style.display = 'block';
+                                    } else {
+                                      section.style.display = 'none';
+                                    }
+                                  }
+                                
+                                  // JavaScript for dropdown functionality
+                                  document.querySelector('.dropbtn').addEventListener('click', function() {
+                                    var dropdownContent = document.querySelector('.dropdown-content');
+                                    if (dropdownContent.style.display === 'block') {
+                                      dropdownContent.style.display = 'none';
+                                    } else {
+                                      dropdownContent.style.display = 'block';
+                                    }
+                                  });
+                                
+                                  // Close the dropdown if the user clicks outside of it
+                                  window.onclick = function(event) {
+                                    if (!event.target.matches('.dropbtn')) {
+                                      var dropdowns = document.getElementsByClassName('dropdown-content');
+                                      for (var i = 0; i < dropdowns.length; i++) {
+                                        var openDropdown = dropdowns[i];
+                                        if (openDropdown.style.display === 'block') {
+                                          openDropdown.style.display = 'none';
+                                        }
+                                      }
+                                    }
+                                  }
+                                </script>
+                                
+                                </body>
+                                </html>
+                        </script>
