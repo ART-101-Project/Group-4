@@ -221,3 +221,5 @@ p {
 .information-section.show {
   transform: translateX(0);
 }
+
+/* Creates a Border and Separate Sections for Buttons */
