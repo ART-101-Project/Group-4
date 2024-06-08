@@ -105,155 +105,44 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title> Project Overview</title>
-<style>
-/* Style for navigation bar */
-   .navbar {
-    overflow: hidden
-    background-color: #333;
-     }
-/* Style for the navigation bar links */
-  .navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-  }
-
-  /* Style for the dropdown content */
-  .drop-down content {
-    display: none;
-    position: absolute;
-    background-color: #304ab4;
-    min-width: 160px;
-    z-index: 1;
-  }
-
-  /* Style for the dropdown links */
-  .dropdown-content a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-
-  */ Style for the active link */
-  .active {
-    background-color: #555;
-  }
-
-  */ Style for the hidden text */
-  .hidden-text {
-    display: none;
-    margin-top: 20px; /* Add some spacing below the navigation bar */
-  }
-  </style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
-  <main id="content">
-    <section>
-      <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">How We Created AI Tech</button>
-        <div id="myDropdown" class="dropdown-content">
-          <div class="navbar">
-            <a class="active" href="#" id="link1">Phase 1: Creating New HTML From Scratch</a>
-            <a class="active" href="#" id="link2">Phase 2: Drawing our Webpage's Illstruations</a>
-            <a class="active" href="#" id="link3">Phase 3: Event Listeners and Hover Functions in Javascript</a>
-            <a class="active" href="#" id="link4">Phase 4: Stylizing the Text and Other Elements in CSS</a>
-          </div>
-        </div>
+<h1>How AI Technology Came to Life (The Creation Process)</h1>
 
-        <!-- Text Sections -->
-        <div id="section1" class="hidden-text">
-          <p>For our project, AI Technology, the very first task on our team's to-do list was to create a brand new HTML file from 
-             scratch that included the main elements of our webpage and crucial details for it's overall structure. The basic
-             idea of our project was to create an immersive and highly interactive tool that educates users on the history of
-             artificial inetlligence, how it's been incorporated into particular job fields and that highlights the inaccuracy of 
-             AI, from time to time. As for the overall design, of our webpage, our team decided that we wanted to include the two
-             main images of people and a single robot, a historical timeline of important events that's occurred in reference to
-             AI technologya and a bottom section that describes more in-depthly the creation process. 
-             As for the people will be including, when users hover them a parapgraph of text should appear that states 
-             fact-checked and peer-rewieved information reagrding how AI technology has impacted the labor force, both 
-             positive and negative aspecst to it, and how/why it may not always be trustworthy. Then, when the robots 
-             hovered over it angrily shakes and random, falsified information is generated instead. To do such, we added
-             numerous different sections to our HTML, like a "People" section that provides each individual person with their own
-             button id's and hover element, a dividing section that explains what AI is in general, and a bottom section for additional 
-             links/info.</p>
-        </div>
-        <div id="section2" class="hidden-text">
-          <p>The main images that we utilized for AI Technology, of the people and the robot were hand-drawn using Abode Illustrator 
-             and then converted into vector images. After they were converted, Sav linked them directly into our HTML and aligned 
-             each image, fitting them into a flex container/flexbox. </p>
-        </div>
-        <div id="section3" class="hidden-text">
-          <p>The...</p>
-        </div>d
-        <div id="section4" class="hidden-text">
-          <p>...</p>
-        </div> 
+<button class="reveal-btn" onclick="toggleText('text1')">Phase 1: Creating New HTML</button>
+  <p id="text1" class="hidden">For our project, AI Technology, the very first task on our team's to-do list was to create a brand new HTML file from 
+  scratch that included the main elements of our webpage and crucial details for it's overall structure. The basic
+  idea of our project was to create an immersive and highly interactive tool that educates users on the history of
+  artificial inetlligence, how it's been incorporated into particular job fields and that highlights the inaccuracy of 
+  AI, from time to time. As for the overall design, of our webpage, our team decided that we wanted to include the two
+  main images of people and a single robot, a historical timeline of important events that's occurred in reference to
+  AI technologya and a bottom section that describes more in-depthly the creation process. 
+  As for the people will be including, when users hover them a parapgraph of text should appear that states 
+  fact-checked and peer-rewieved information reagrding how AI technology has impacted the labor force, both 
+  positive and negative aspecst to it, and how/why it may not always be trustworthy. Then, when the robots 
+  hovered over it angrily shakes and random, falsified information is generated instead. To do such, we added
+  numerous different sections to our HTML, like a "People" section that provides each individual person with their own
+  button id's and hover element, a dividing section that explains what AI is in general, and a bottom section for additional 
+  links/info.</p>
 
-        <script>
-          // Javascript to toggle visibility of text section when links are clicked
-          document.getElementById('link1').addEventListener('click', function() {
-            toggleSelectionVisibility('section1');
-          });
+  <button class="reveal-btn" onclick="toggleText('text2')">Phase 2: Drawing the Illstruations</button>
+  <p id="text2" class="hidden">The main images that we utilized for AI Technology, of the people and the robot were hand-drawn using Abode Illustrator 
+  and then converted into vector images. After they were converted, Sav linked them directly into our HTML and aligned 
+  each image, fitting them into a flex container/flexbox.</p>
 
-          document.getElementById('link2').addEventListener('click', function() {
-            toggleSelectionVisibility('section2');
-          });
+  <button class="reveal-btn" onclick="toggleText('text3')">Phase 3: Event Listeners and Hover Functions</button>
+  <p id="text3" class="hidden"><../p>
 
-          document.getElementById('link3').addEventListener('click', function() {
-            toggleSelectionVisibility('section3');
-          });
+  <button class="reveal-btn" onclick="toggleText('text4')">Phase 4: Stylizing Text and Other Elements</button>
+  <p id="text4" class="hidden"><../p>
 
-          document.getElementById('link4').addEventListener('click', function() {
-            toggleSelectionVisibility('section4');
-          });
+  <button class="reveal-btn" onclick="toggleText('text5')">Phase 5: Finding Sources and Research</button>
+  <p id="text5" class="hidden">...</p>
 
-          // Function to toggle visibility of text sections
-          function toogleSelectionVisibility(sectionId) {
-            var section = document.getElementId(sectionId);
-            var sections = document.getElementsByClassName('hidden-text');
-            // Hide all text sections except the one clicked 
-            for (var i = 0; i < section. length; i++) {
-              if (section[i].id !== sectionId) {
-                sections[i].style.display = 'none';
-              }
-            }
-            // Toggle visibility of the clicked text section
-            if (section.style.display === 'none' || section.style.display === '') {
-                                      section.style.display = 'block';
-                                    } else {
-                                      section.style.display = 'none';
-                                    }
-                                  }
-                                
-                                  // JavaScript for dropdown functionality
-                                  document.querySelector('.dropbtn').addEventListener('click', function() {
-                                    var dropdownContent = document.querySelector('.dropdown-content');
-                                    if (dropdownContent.style.display === 'block') {
-                                      dropdownContent.style.display = 'none';
-                                    } else {
-                                      dropdownContent.style.display = 'block';
-                                    }
-                                  });
-                                
-                                  // Close the dropdown if the user clicks outside of it
-                                  window.onclick = function(event) {
-                                    if (!event.target.matches('.dropbtn')) {
-                                      var dropdowns = document.getElementsByClassName('dropdown-content');
-                                      for (var i = 0; i < dropdowns.length; i++) {
-                                        var openDropdown = dropdowns[i];
-                                        if (openDropdown.style.display === 'block') {
-                                          openDropdown.style.display = 'none';
-                                        }
-                                      }
-                                    }
-                                  }
-                                </script>
-                                
-                                </body>
-                                </html>
-                        </script>
+  <script src="script.js"></script>
+  </body>
+  </html>
+
+  
+  
