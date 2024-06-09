@@ -100,13 +100,22 @@
 
     <!--I am not sure why the !DOCTYPE was added again with an additional header so we may want to merge the two up top, I would also refrain from trying inline coding because it might clash with whatever code you have in your JS file.-->
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+
 <!--Dividing section-->
 <div class="divide-bar"><h1>How AI Technology Came to Life (The Creation Process)</h1></div>
 <div id="process-container">
 <div class="How AI Technology Came to Life (The Creation Process)-section">
 
-<button class="reveal-btn" onclick="toggleText('text1')">Phase 1: Creating New HTML</button>
-  <p id="text1" class="hidden">For our project, AI Technology, the very first task on our team's to-do list was to create a 
+<button class="toggle-btn">Phase 1: Creating New HTML</button>
+<div class="hidden-text">For our project, AI Technology, the very first task on our team's to-do list was to create a 
   brand new HTML file from scratch that included the main elements of our webpage and crucial details for it's overall 
   structure. The basic idea of our project was to create an immersive and highly interactive tool that educates users on 
   the history of artificial intelligence, how it's been incorporated into particular job fields and that highlights the 
@@ -121,13 +130,13 @@
   button id's and "enlarge" functions, a dividing section that explains what AI is in general, and a bottom section for 
   additional links/info.</p>
 
-  <button class="reveal-btn" onclick="toggleText('text2')">Phase 2: Drawing the Illstruations</button>
-  <p id="text2" class="hidden">The main images that we utilized for AI Technology, of the people and the robot were hand-drawn using Abode Illustrator 
+  <button class="toggle-btn">Phase 2: Drawing the Illstruations</button>
+  <div class="hidden">The main images that we utilized for AI Technology, of the people and the robot were hand-drawn using Abode Illustrator 
   and then converted into vector images. After they were converted, group member, Savvy Burch linked the inrcedible illustrations they had made directly 
   into our main index.html and aligned each image, fitting them into a flex container/flexbox.</p>
 
-  <button class="reveal-btn" onclick="toggleText('text3')">Phase 3: Event Listeners and Hover Functions</button>
-  <p id="text3" class="hidden">For the third phase, we shifted our attention over to implmenting the main basic functions that we wanted our webpage to have 
+  <button class="toggle-btn">Phase 3: Event Listeners and Hover Functions</button>
+  <div class="hidden">For the third phase, we shifted our attention over to implmenting the main basic functions that we wanted our webpage to have 
   through Javascript and created four different Javascript files. For the first file, group member, Manuel Marshutz, formatted and coded our index.js file for 
   the team and layed out the basic framework for our website. Within, the file he added background nodes and event listeners so that every time one of the 
   people were hovered over their illustration would be enlarged and the background behind them would slightly darken.He then added event listeners to box 1 and
@@ -135,11 +144,11 @@
   created our Javascript, nodes.js file, using the data structure to set parameters for various elements like that of width, height, size, and etc.. He then added
   event listeners and various functions for each node.</p>
 
-  <button class="reveal-btn" onclick="toggleText('text4')">Phase 4: Stylizing Text and Other Elements</button>
-  <p id="text4" class="hidden"></p>
+  <button class="toggle-btn">Phase 4: Stylizing Text and Other Elements</button>
+  <div class="hidden"></p>
 
-  <button class="reveal-btn" onclick="toggleText('text5')">Phase 5: Finding Sources and Research</button>
-  <p id="text5" class="hidden">...</p>
+  <button class="toggle-btn">Phase 5: Finding Sources and Research</button>
+  <div class="hidden">...</p>
 
   <script src="script.js"></script>
   </body>
