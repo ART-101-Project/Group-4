@@ -9,12 +9,12 @@
 
 /* Dropdown button o hover & focus */
 .dropbtn:hover, dropbtn:focus {
-  backgroind-color: #2980B9;
+  background-color: #2980B9;
   }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-  postion: relative;
+  position: relative;
   display: inline-block;
 }
 
@@ -33,7 +33,7 @@
 
 /* Popup container */
 .popup {
-    positison: relative;
+    position: relative;
     display: inline-block;
     cursor: pointer;
   }
@@ -47,7 +47,7 @@
     text-align: center;
     border-radius: 6px;
     padding: 8px 0;
-    position: absolute:
+    position: absolute;
     z-index: 1;
     bottom: 125%;
     left: 50%;
@@ -67,14 +67,14 @@
 }
 
 /* Toogle this class when clicking on the popup container (hide and show the popup) */
-.popup .show {
+.popup.show {
    visibility: visible;
    -webkit-animation: fadeIn 1s;
    animation: fadeIn 1s
  }
 
  /* Add animation (fade in the popup) */
- @-wekbit-keyframes fadeIn {
+ @-webkit-keyframes fadeIn {
    from {opacity: 0;}
    to {opacity:1 ;}
 }

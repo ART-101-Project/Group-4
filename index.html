@@ -7,6 +7,7 @@
     <title>A.I. Tech</title>
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/bottomsection.css" />"
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,6 +24,7 @@
     <script type="text/javascript" src="./js/nodes.js"></script>
     <script type="text/javascript" src="./js/index.js" defer></script>
     <script type="text/javascript" src="./js/bottomsection.js" defer></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <!--CANVAS BACKDROP-->
@@ -44,37 +46,25 @@
     <div id="temp"></div>
     <!--People Section-->
     <div id="flex-container">
-      <div id="element" class="box-1 double hover-element">
-        <button class="head"></button>
-        <button id="person-1" class="enlarge"></button>
+      <div id="element" class="box-1 double">
+        <object type = "image/svg+xml" id = "personhead" class = "head" data = "img/personhead.svg"></object>
+        <object type = "image/svg+xml" id = "personbody" data = "img/personbody.svg"></object>
       </div>
       <div class="box-1 double">
-        <button class="head"></button>
-        <button id="person-2" class="enlarge"></button>
+        <object type = "image/svg+xml" id = "personhead" class = "head" data = "img/personhead.svg"></object>
+        <object type = "image/svg+xml" id = "personbody" data = "img/personbody.svg"></object>
       </div>
       <div class="box-1 double">
-        <button class="head"></button>
-        <button id="person-3" class="enlarge"></button>
+        <object type = "image/svg+xml" id = "personhead" class = "head" data = "img/personhead.svg"></object>
+        <object type = "image/svg+xml" id = "personbody" data = "img/personbody.svg"></object>
       </div>
       <div class="box-1 double">
-        <button class="head"></button>
-        <button id="person-4" class="enlarge"></button>
+        <object type = "image/svg+xml" id = "personhead" class = "head" data = "img/personhead.svg"></object>
+        <object type = "image/svg+xml" id = "personbody" data = "img/personbody.svg"></object>
       </div>
       <div class="box-1 double">
-        <button class="head"></button>
-        <button id="person-5" class="enlarge"></button>
-      </div>
-      <div class="box-1 double">
-        <button class="head"></button>
-        <button id="person-6" class="enlarge"></button>
-      </div>
-      <div class="box-1 double">
-        <button class="head"></button>
-        <button id="person-7" class="enlarge"></button>
-      </div>
-      <div class="box-1 double">
-        <button class="head"></button>
-        <button id="person-8" class="enlarge"></button>
+        <object type="image/svg+xml" id = "robothead" class ="head" data="img/robotheadagain.svg"></object>
+        <object type ="image/svg+xml" id = "robotbody" data = "img/robotbodyagain.svg" ></object>
       </div>
     </div>
     <!--Dividing section-->
@@ -97,17 +87,6 @@
         </p>
       </div>
     </div>
-
-    <!--I am not sure why the !DOCTYPE was added again with an additional header so we may want to merge the two up top, I would also refrain from trying inline coding because it might clash with whatever code you have in your JS file.-->
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, intial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-</head>
-<body>
 
 <!--Dividing section-->
 <div class="divide-bar"><h1>How AI Technology Came to Life</h1></div>
@@ -160,7 +139,7 @@ added event listeners and various functions for each node.</p>
 ...
 </p>
 
-  <script src="script.js"></script>
+</div>
   </body>
   </html>
 
