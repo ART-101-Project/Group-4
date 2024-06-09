@@ -222,24 +222,15 @@ p {
   transform: translateX(0);
 }
 
-/* Creates a Border and Separate Sections for Buttons */
-
-#How AI Technology Came to Life (The Creation Process)-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.hidden-text {
+  display: none;
+  margin-top: 10px;
 }
 
-.How AI Technology Came to Life (The Creation Process)-section {
-  background-color: var(--clr);
-  color: white;
-  display: flex;
-  width: 80%;
-  height: 175px;
+/* Styling for the button */
+.toggle.btn {
+  padding: 5px 10px;
   margin: 5px;
-  transform: translateX(400%);
-  transition: transform 0.8s ease;
-  border: 1px red solid;
+  cursor: pointer;
 }
 
