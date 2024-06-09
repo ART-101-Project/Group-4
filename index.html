@@ -3,71 +3,166 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>A.I. Tech</title>
+    <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <!--Combine all JavaScript?-->
-    <script type="text/javascript" src="./js/nodes.js"></script>
-    <script type="text/javascript" src="./js/index.js" defer></script>
-    <!--Font-->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>A.I. Tech</title>
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./js/nodes.js"></script>
+    <script type="text/javascript" src="./js/index.js" defer></script>
+    <script type="text/javascript" src="./js/bottomsection.js" defer></script>
   </head>
-
-
-  <!--Title on top-->
-  <nav id="nav-container">
-    <div id="title">
-      <h1 style="display: inline-block">Group 4:</h1>
-      <p style="display: inline-block">AI Technology</p>
-    </div>
-  </nav>
   <body>
+    <!--CANVAS BACKDROP-->
     <canvas id="nodes"></canvas>
-
+    <!--Title on top-->
+    <section id="container-title">
+      <div id="title">
+        <h1>Group 4:</h1>
+        <p>AI Technology</p>
+      </div>
+    </section>
     <!--Pop up element sections, can be rearranged if the area is not where we want the content to be-->
-      <div class="popup" id="popup">Popup Content</div>
-
+    <div id="container-popup">
+      <div class="popup" id="popup">
+        <img src="img/infographic_1.jpg" />
+        <p>Test</p>
+      </div>
+    </div>
+    <div id="temp"></div>
     <!--People Section-->
     <div id="flex-container">
-      <div class="box-1 double">
-        <object type = "image/svg+xml" id = "personhead" class = "head" data = "img/personhead.svg"></object>
-        <object type = "image/svg+xml" id = "personbody" data = "img/personbody.svg"></object>
+      <div id="element" class="box-1 double hover-element">
+        <button class="head"></button>
+        <button id="person-1" class="enlarge"></button>
       </div>
       <div class="box-1 double">
-        <object type = "image/svg+xml" id = "personhead" class = "head" data = "img/personhead.svg"></object>
-        <object type = "image/svg+xml" id = "personbody" data = "img/personbody.svg"></object>
+        <button class="head"></button>
+        <button id="person-2" class="enlarge"></button>
       </div>
       <div class="box-1 double">
-        <object type = "image/svg+xml" id = "personhead" class = "head" data = "img/personhead.svg"></object>
-        <object type = "image/svg+xml" id = "personbody" data = "img/personbody.svg"></object>
+        <button class="head"></button>
+        <button id="person-3" class="enlarge"></button>
       </div>
       <div class="box-1 double">
-        <object type = "image/svg+xml" id = "personhead" class = "head" data = "img/personhead.svg"></object>
-        <object type = "image/svg+xml" id = "personbody" data = "img/personbody.svg"></object>
+        <button class="head"></button>
+        <button id="person-4" class="enlarge"></button>
       </div>
       <div class="box-1 double">
-        <object type = "image/svg+xml" id = "personhead" class = "head" data = "img/personhead.svg"></object>
-        <object type = "image/svg+xml" id = "personbody" data = "img/personbody.svg"></object>
+        <button class="head"></button>
+        <button id="person-5" class="enlarge"></button>
       </div>
       <div class="box-1 double">
-        <object type="image/svg+xml" id = "robothead" class ="head" data="img/robotheadagain.svg"></object>
-        <object type ="image/svg+xml" id = "robotbody" data = "img/robotbodyagain.svg" ></object>
+        <button class="head"></button>
+        <button id="person-6" class="enlarge"></button>
+      </div>
+      <div class="box-1 double">
+        <button class="head"></button>
+        <button id="person-7" class="enlarge"></button>
+      </div>
+      <div class="box-1 double">
+        <button class="head"></button>
+        <button id="person-8" class="enlarge"></button>
+      </div>
+    </div>
+    <!--Dividing section-->
+    <div class="divide-bar"><h1>Information</h1></div>
+    <div id="information-container">
+      <div id="information-start" class="information-section show">
+        <p>What is A.I.?</p>
+      </div>
+      <div class="information-section">
+        <p>
+          Artificial intelligence is technology that allows computers and
+          machines to engage in human intelligence in order to accomplish
+          problem solving. Emerging as a field of computer science, AI seeks to
+          process data information while recognizing patterns and making
+          predictions/decisions modeled after human judgment. Linked to machine
+          and deep learning, artificial intelligence “learns” from existing
+          information that is programmed within the system. This allows the
+          machine to facilitate cognitive functions that are usually associated
+          with human minds and subsequent thinking.
+        </p>
       </div>
     </div>
 
-    <!--Dividing section-->
-    <div class="divide-bar"><h1>Subject...</h1>
-      <p>lorem ipsum...</p>
-    </div>
+    <!--I am not sure why the !DOCTYPE was added again with an additional header so we may want to merge the two up top, I would also refrain from trying inline coding because it might clash with whatever code you have in your JS file.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+
+<!--Dividing section-->
+<div class="divide-bar"><h1>How AI Technology Came to Life</h1></div>
+<div id="process-container">
+  <p>The Creation Process</p>
+</div>
+  <div class="How AI Technology Came to Life (The Creation Process)-section">
+ <p>Phase 1: Creating New HTML
+    
+For our project, AI Technology, the very first task on our team's to-do list was to create a brand new HTML file from scratch that 
+included the main elements of our webpage and crucial details for it's overall structure. The basic idea of our project was to create 
+an immersive and highly interactive tool that educates users on the history of artificial intelligence, how it's been incorporated into 
+particular job fields and that highlights the inaccuracy of  AI, from time to time. As for the overall design, of our webpage, our team 
+decided that we wanted to include the two main images of people and a single robot, a historical timeline of important events that's 
+occurred in reference to AI technology and a bottom section that describes more in-depthly the creation process. As for the 
+illustrations of people that the main face of our webpage will include, when users hover them a paragraph of text should 
+appear that states fact-checked and peer-reviewed information regarding how AI technology has impacted the labor force,both 
+positively and negatively and how/why it may not always be trustworthy. Additionally, when users hover over our robot, it 
+should angrily shake and generate random falsified information instead. To do such, we added numerous different sections to our 
+HTML, like a "People" section that provides each individual person with their own button id's and "enlarge" functions, a dividing 
+section that explains what AI is in general, and a bottom section for additional links/info.</p>
+
+
+
+<p>Phase 2: Drawing the Illstruations
+
+The main images that we utilized for AI Technology, of the people and the robot were hand-drawn using Abode Illustrator 
+and then converted into vector images. After they were converted, group member, Savvy Burch linked the inrcedible 
+illustrations they had made directly into our main index.html and aligned each image, fitting them into a flex 
+container/flexbox.</p>
+
+<p>Phase 3: Event Listeners and Hover Functions
+
+For the third phase, we shifted our attention over to implmenting the main basic functions that we wanted our webpage to have 
+through Javascript and created four different Javascript files. For the first file, group member, Manuel Marshutz, formatted and 
+coded our index.js file for the team and layed out the basic framework for our website. Within, the file he added background nodes 
+and event listeners so that every time one of the people were hovered over their illustration would be enlarged and the background 
+behind them would slightly darken.He then added event listeners to box 1 and a separate Javascript for the popup content that's 
+supposed to appear above the people, of our website, by applying callback functions. Next, Manuel also created our Javascript, 
+nodes.js file, using the data structure to set parameters for various elements like that of width, height, size, and etc.. He then 
+added event listeners and various functions for each node.</p>
+
+<p>Phase 4: Stylizing Text and Other Elements
+
+.....
+</p>
+
+<p>Phase 5: Finding Sources and Research
+
+...
+</p>
+
+  <script src="script.js"></script>
   </body>
-</html>
+  </html>
+
+  
+  

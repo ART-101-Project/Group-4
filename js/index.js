@@ -6,16 +6,16 @@ var nodesjs = new NodesJs({
   id: "nodes",
   width: window.innerWidth,
   height: window.innerHeight,
-  particleSize: 2,
-  lineSize: 1,
-  particleColor: [255, 255, 255, 0.3],
+  particleSize: 1,
+  lineSize: 0.5,
+  particleColor: [255, 255, 255],
   lineColor: [255, 255, 255],
-  backgroundFrom: [45, 106, 79],
-  backgroundTo: [82, 183, 136],
+  backgroundFrom: [27, 45, 72],
+  backgroundTo: [44, 69, 107],
   backgroundDuration: 8000,
   nobg: false,
   number: window.hasOwnProperty("orientation") ? 30 : 100,
-  speed: 20,
+  speed: 15,
   pointerCircleRadius: 150,
 });
 
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// JavaSCript for Hover popup content
+// JavaSCript for Hover popup content; W3SCHOOLS
 document.getElementById("element").addEventListener("mouseover", function () {
   document.getElementById("popup").style.display = "block";
 });
@@ -65,3 +65,25 @@ document.getElementById("element").addEventListener("mouseover", function () {
 document.getElementById("element").addEventListener("mouseout", function () {
   document.getElementById("popup").style.display = "none";
 });
+
+// slide animation for boxes source: https://www.youtube.com/watch?v=peFOHcbEUig&ab_channel=WebDevMadeEasy
+
+const boxes = document.querySelectorAll(".information-section");
+
+window.addEventListener("scroll", checkBoxes);
+
+checkBoxes();
+
+function checkBoxes() {
+  const triggerBottom = (window.innerHeight / 5) * 4;
+
+  boxes.forEach((box) => {
+    const boxTop = box.getBoundingClientRect().top;
+
+    if (boxTop < triggerBottom) {
+      box.classList.add("show");
+    } else {
+      box.classList.remove("show");
+    }
+  });
+}
