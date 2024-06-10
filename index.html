@@ -22,7 +22,7 @@
       crossorigin="anonymous"
     ></script>
     <script type="text/javascript" src="./js/nodes.js"></script>
-    <script type = "text/javascript" src="./js/tracery.js" defer></script>
+    <script type="text/javascript" src="./js/tracery.js" defer></script>
     <script type="text/javascript" src="./js/index.js" defer></script>
     <script type="text/javascript" src="./js/timeline.js"></script>
   </head>
@@ -46,37 +46,70 @@
     <div id="temp"></div>
     <!--People Section-->
     <div id="flex-container">
-      <div id="element" class="box-1 double hover-element">
-        <button class="head"></button>
-        <button id="person-1" class="enlarge"></button>
+      <div id="element" class="box-1 double">
+        <object
+          type="image/svg+xml"
+          id="personhead"
+          class="head"
+          data="img/personhead.svg"
+        ></object>
+        <object
+          type="image/svg+xml"
+          id="personbody"
+          data="img/personbody.svg"
+        ></object>
       </div>
       <div class="box-1 double">
-        <button class="head"></button>
-        <button id="person-2" class="enlarge"></button>
+        <object
+          type="image/svg+xml"
+          id="personhead"
+          class="head"
+          data="img/personhead.svg"
+        ></object>
+        <object
+          type="image/svg+xml"
+          id="personbody"
+          data="img/personbody.svg"
+        ></object>
       </div>
       <div class="box-1 double">
-        <button class="head"></button>
-        <button id="person-3" class="enlarge"></button>
+        <object
+          type="image/svg+xml"
+          id="personhead"
+          class="head"
+          data="img/personhead.svg"
+        ></object>
+        <object
+          type="image/svg+xml"
+          id="personbody"
+          data="img/personbody.svg"
+        ></object>
       </div>
       <div class="box-1 double">
-        <button class="head"></button>
-        <button id="person-4" class="enlarge"></button>
+        <object
+          type="image/svg+xml"
+          id="personhead"
+          class="head"
+          data="img/personhead.svg"
+        ></object>
+        <object
+          type="image/svg+xml"
+          id="personbody"
+          data="img/personbody.svg"
+        ></object>
       </div>
       <div class="box-1 double">
-        <button class="head"></button>
-        <button id="person-5" class="enlarge"></button>
-      </div>
-      <div class="box-1 double">
-        <button class="head"></button>
-        <button id="person-6" class="enlarge"></button>
-      </div>
-      <div class="box-1 double">
-        <button class="head"></button>
-        <button id="person-7" class="enlarge"></button>
-      </div>
-      <div class="box-1 double">
-        <button class="head"></button>
-        <button id="person-8" class="enlarge"></button>
+        <object
+          type="image/svg+xml"
+          id="robothead"
+          class="head"
+          data="img/robotheadagain.svg"
+        ></object>
+        <object
+          type="image/svg+xml"
+          id="robotbody"
+          data="img/robotbodyagain.svg"
+        ></object>
       </div>
     </div>
     <!--Dividing section-->
@@ -99,13 +132,14 @@
         </p>
       </div>
     </div>
-<<<<<<< Updated upstream
-  
+    <div class="divide-bar"><h1>Timeline</h1></div>
+    <<<<<<< Updated upstream
+    <body>
       <div class="timeline">
           <div class="container">
               <div class="content">
                   <h2>Early 20th Century: The Start of AI</h2>
-                  <p>AI first began being discussed in the early 20th century with science fiction that popularized the idea of artificially intelligent robots. Media portrayed this possibility through movies and shows, which helped spark the work within the scientific community who pondered the question “Can we train machines to use available information and reason to solve problems and make decisions?” This was brought forth by Alan Turing who explored the possibilities of AI in his 1950’s paper Computing Machinery and Intelligence. While having ideas that could have made AI much more of a reality, Turing encountered obstacles. Before 1949, computers lacked the ability to store commands. This translates to computers knowing what to do when told, but being unable to remember this information.Computing was extremely expensive and access was limited which prevented such advancements to be made at the time.</p>
+                  <p>AI first began being discussed in the early 20th century with science fiction that popularized the idea of artificially intelligent robots. Media portrayed this possibility through movies and shows, which helped spark the work within the scientific community who pondered the question “Can we train machines to use available information and reason to solve problems and make decisions?” This was brought forth by Alan Turing who explored the possibilities of AI in his 1950s paper Computing Machinery and Intelligence. While having ideas that could have made AI much more of a reality, Turing encountered obstacles. Before 1949, computers lacked the ability to store commands. This translates to computers knowing what to do when told, but being unable to remember this information.Computing was extremely expensive and access was limited which prevented such advancements to be made at the time.</p>
               </div>
           </div>
           <div class="container">
@@ -135,16 +169,20 @@
       <div class="container">
               <div class="content">
                   <h2>AI in the Late 90s and Early 2000s</h2>
-                  <p>AI was finally reaching the point that scholars like Turing imagined it could be, examples of this: 1997: world chess champ and grandmaster Gary Kasparov lost to IBM's Deep Blue, chess playing computer program 
-                    1997: speech recognition software created by Dragon Systems was implemented on Windows 
-                    Late 1990s: Kismet created by Dr. Cynthia Breazeal, a robot that could recognize and mimic human emotions </p>
+                  <p>AI was finally reaching the point that scholars like Turing imagined it could be, examples of this: 1997: world chess champ and grandmaster Gary Kasparov lost to IBM's Deep Blue, chess playing computer program 1997: speech recognition software created by Dragon Systems was implemented on Windows Late 1990s: Kismet created by Dr. Cynthia Breazeal, a robot that could recognize and mimic human emotions </p>
               </div>
           </div>
-      <div class="container">
-              <div class="content">
-                  <h2>Deep Neural Networks 2015</h2>
-                  <p>Baidu's Minwa supercomputer runs on a special kind of deep neural network known as a convolutional neural network to identify and categorize images with a higher rate of accuracy than the average human.</p>
-              </div>
+        </div>
+        <div class="container">
+          <div class="content">
+            <h2>The First AI: Logic Theorist 1956</h2>
+            <p>
+              Fast forward to the mid 50s and the first AI program titled Logic
+              Theorist was presented by Allen Newell, Cliff Shaw, and Herbert
+              Simon's. It attempted to emulate the problem solving abilities of
+              people. This showcased that AI was possible and could be achieved
+              while helping propel the next 20 years of research.
+            </p>
           </div>
       <div class="container">
               <div class="content">
@@ -158,80 +196,187 @@
                   <p> We have watched large language models, or LLMs, such as ChatGPT expand the capacity of AI use and potential to increase enterprise value. With these new generative practices, deep-learning models can be pre-trained on vast amounts of raw, unlabeled data.</p>
               </div>
           </div>
+        </div>
+        <div class="container">
+          <div class="content">
+            <h2>Expert Systems</h2>
+            <p>
+              Introduced by Edward Feigenbaum, expert systems exploded onto the
+              scene. These could ask an expert in any field questions about
+              every situation possible, internalize this data, and then were
+              able to recount it to a non expert.
+            </p>
+            <div class="dropdown-content">
+              <p>
+                Japanese governments endeavors with the Fifth Generation Project
+                (heavily funded expert systems that focused on computer
+                processing, logic programming, and improving AI overall)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="content">
+            <h2>AI in the Late 90s and Early 2000s</h2>
+            <p>
+              AI was finally reaching the point that scholars like Turing
+              imagined it could be, examples of this:
+            </p>
+            <div class="dropdown-content">
+              <p>
+                1997: world chess champ and grandmaster Gary Kasparov lost to
+                IBM's Deep Blue, chess playing computer program 1997: speech
+                recognition software created by Dragon Systems was implemented
+                on Windows Late 1990s: Kismet created by Dr. Cynthia Breazeal, a
+                robot that could recognize and mimic human emotions
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="content">
+            <h2>Deep Neural Networks 2015</h2>
+            <p>
+              Baidu's Minwa supercomputer runs on a special kind of deep neural
+              network known as a convolutional neural network to identify and
+              categorize images with a higher rate of accuracy than the average
+              human.
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="content">
+            <h2>Deep Mind's AlphaGo Program 2016</h2>
+            <p>
+              Powered by a deep neural network,DeepMind's AlphaGo program beats
+              the world champion Go player, in a five-game match. This victory
+              over Lee Sodol is very impressive as there are an immense number
+              of possible moves as the game progresses (over 14.5 trillion after
+              just four moves!).
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="content">
+            <h2>The Rise of Generative AI 2023</h2>
+            <p>
+              We have watched largelanguage models, or LLMs, such as ChatGPT
+              expand the capacity of AI use and potential to increase enterprise
+              value. With these new generative practices, deep-learning models
+              can be pre-trained on vast amounts of raw, unlabeled data.
+            </p>
+          </div>
+        </div>
       </div>
-  
+    </body>
 
-  <!--Dividing section-->
- <div id="types-container">
-   <div class="divide-bar">
-     <h1>The 7 Main  Types of Artifical Intelligence </h1>
-   </div> 
-   <div class="sub-title">
-     
-     <ul>
-       <il>
-         <h2> Narrow AI or Also Known As ANI </h2>
-         <p>Narrow AI is any kind of artificial intelligence system and/or form of AI technology that's sole purpose is to complete a set of
-          very specific actions or basic commands. While ANI's are created with the intended goal in mind of serving and exceling in a cognitive 
-          capability, this particular sub-category of AI technologies still aren't able to independently learn new skills that it's not
-          already programmed and/or wasn't intially designed to learn. These kind of technologies are developed by combining a subfield of 
-          artifical intelligence called "machine learning" with neural network algorithms to fucntion properly and accomplish the specificed 
-          tasks it's programmed to complete. Through machine learning, AI systems are provided with the ability to process data and statistics, 
-          while simultaneously applying problem-solving strategies that are similar to that of strategies used by actual people, like that of 
-          trail and error, to improve it's own processes and "think" at faster rates. Examples of such A.I. include image recognition software,
-          self-driving cars, and AI virtual assistants.</p>
-       </il>
-       <il>
-         <h2>Artifical Genral Intelligence (AGI)</h2>
-         <p>Artificial General Intelligence and/or general AI is any form of artificial intelligence that's capacity for thinking, learning, and 
-            preforming more closely resembles that of a real person, as it's able to preform more divesive and detailed directions/tasks. While 
-            AGI's are still a working progress, the fundamental framework for this type of AI may be constructed from technologies such as 
-            supercomputers, quantum hardware and generative AI models like that of ChatGPT.</p>
-       </il>
-       <il>
-         <h2>Artificial Superintelligence</h2>
-         <p>Artificial Superintelligence and/or super AI is more of a figment of the imgaination and is showcased through numerous science fiction movies 
-            like that of The Termninator and Machina. It's the infamously known theroy that artificial intelligence will become significantly more 
-            knowledgable and efficient than humans, eventually becoming the backbone of another sub-genre of AI called self-aware AI and other 
-            individualistic, robotic projects. As CEO of the AI writing company, Jasper, Dave Rogenmoser once said himself,"Artificial superintelligence
-            will become by far the most capable forms of intelligence on earth.... It will have the intelligence of human beings and will be exceedingly
-            better at everything that we do."</p>
-       </il>
-       <il>
-         <h2>Reactive Machine AI</h2>
-         <p>While reactive machine AI's are the most fundemntal type of AI and can respond to immediate requests/tasks, the technology is greatly limited 
-            in terms of storing memory, learning from past experiences and absed on that learning ehancing one's own efficiency and responding to combinations 
-            of inputs. Additionally, reactive machine AI's also come in handy when mainly preforming autonomous functions, such as filtering spam from email 
-            box's and recommending items to online shoppers based off of their personal shopping history. An example of such would be the reactive AI machine
-            Deep Blue, whihc in 1997 beat grandmaster Garry Kasparov in a game of chess.</p>
-       </il>
-       <il>
-         <h2>Limited Memory AI</h2>
-         <p>The expertises of limited memory AI can be found in it's ability to store previously retrieved data and then anazlye it to make predictions
-            Limited memory AI heavily depends on a sub-set of machine learning that's called "deep learning" which operates simiarily to that of neurons
-            inside the human brain. Through, such the machine is able to provess data from experiences and "learn" from them, iincreasing it's own 
-            accuracy and overall, functionality. The impact of this kind of AI can be seen from the sheer fact that a majority of today's AI applications
-            are derived from the limited memeory model and range from chatbots and virtual assistants to self-driving cars that constantly observe and 
-            process environmental data around them while driving on roads.</p>
-       </il>
-       <il>
-         <h2>Theory of Mind AI</h2>
-         <p>.....</p>
-       </il>
-       <il>
-         <h2>Self-Aware AI</h2>
-         <p>......</p>
-       </il>
-     </ul>
-   </div>
-   
-<div id="backTop">
-    <p><a href="#top">back to the top</a></p>
-</div>
+    <!--Dividing section-->
+    <div id="types-container">
+      <div class="divide-bar">
+        <h1>The 7 Main Types of Artifical Intelligence</h1>
+      </div>
+      <div class="sub-title">
+        <ul>
+          <il>
+            <h2>Narrow AI or Also Known As ANI</h2>
+            <p>
+              Narrow AI is any kind of artificial intelligence system and/or
+              form of AI technology that's sole purpose is to complete a set of
+              very specific actions or basic commands. While ANI's are created
+              with the intended goal in mind of serving and exceling in a
+              cognitive capability, this particular sub-category of AI
+              technologies still aren't able to independently learn new skills
+              that it's not already programmed and/or wasn't intially designed
+              to learn. These kind of technologies are developed by combining a
+              subfield of artifical intelligence called "machine learning" with
+              neural network algorithms to fucntion properly and accomplish the
+              specificed tasks it's programmed to complete. Through machine
+              learning, AI systems are provided with the ability to process data
+              and statistics, while simultaneously applying problem-solving
+              strategies that are similar to that of strategies used by actual
+              people, like that of trail and error, to improve it's own
+              processes and "think" at faster rates. Examples of such A.I.
+              include image recognition software, self-driving cars, and AI
+              virtual assistants.
+            </p>
+          </il>
+          <il>
+            <h2>Artifical Genral Intelligence (AGI)</h2>
+            <p>
+              Artificial General Intelligence and/or general AI is any form of
+              artificial intelligence that's capacity for thinking, learning,
+              and preforming more closely resembles that of a real person, as
+              it's able to preform more divesive and detailed directions/tasks.
+              While AGI's are still a working progress, the fundamental
+              framework for this type of AI may be constructed from technologies
+              such as supercomputers, quantum hardware and generative AI models
+              like that of ChatGPT.
+            </p>
+          </il>
+          <il>
+            <h2>Artificial Superintelligence</h2>
+            <p>
+              Artificial Superintelligence and/or super AI is more of a figment
+              of the imgaination and is showcased through numerous science
+              fiction movies like that of The Termninator and Machina. It's the
+              infamously known theroy that artificial intelligence will become
+              significantly more knowledgable and efficient than humans,
+              eventually becoming the backbone of another sub-genre of AI called
+              self-aware AI and other individualistic, robotic projects. As CEO
+              of the AI writing company, Jasper, Dave Rogenmoser once said
+              himself,"Artificial superintelligence will become by far the most
+              capable forms of intelligence on earth.... It will have the
+              intelligence of human beings and will be exceedingly better at
+              everything that we do."
+            </p>
+          </il>
+          <il>
+            <h2>Reactive Machine AI</h2>
+            <p>
+              While reactive machine AI's are the most fundemntal type of AI and
+              can respond to immediate requests/tasks, the technology is greatly
+              limited in terms of storing memory, learning from past experiences
+              and absed on that learning ehancing one's own efficiency and
+              responding to combinations of inputs. Additionally, reactive
+              machine AI's also come in handy when mainly preforming autonomous
+              functions, such as filtering spam from email box's and
+              recommending items to online shoppers based off of their personal
+              shopping history. An example of such would be the reactive AI
+              machine Deep Blue, whihc in 1997 beat grandmaster Garry Kasparov
+              in a game of chess.
+            </p>
+          </il>
+          <il>
+            <h2>Limited Memory AI</h2>
+            <p>
+              The expertises of limited memory AI can be found in it's ability
+              to store previously retrieved data and then anazlye it to make
+              predictions Limited memory AI heavily depends on a sub-set of
+              machine learning that's called "deep learning" which operates
+              simiarily to that of neurons inside the human brain. Through, such
+              the machine is able to provess data from experiences and "learn"
+              from them, iincreasing it's own accuracy and overall,
+              functionality. The impact of this kind of AI can be seen from the
+              sheer fact that a majority of today's AI applications are derived
+              from the limited memeory model and range from chatbots and virtual
+              assistants to self-driving cars that constantly observe and
+              process environmental data around them while driving on roads.
+            </p>
+          </il>
+          <il>
+            <h2>Theory of Mind AI</h2>
+            <p>.....</p>
+          </il>
+          <il>
+            <h2>Self-Aware AI</h2>
+            <p>......</p>
+          </il>
+        </ul>
+      </div>
 
-
+      <div id="backTop">
+        <p><a href="#top">back to the top</a></p>
+      </div>
+    </div>
   </body>
-  </html>
-
-  
-  
+</html>

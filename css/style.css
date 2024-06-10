@@ -104,7 +104,7 @@ p {
 }
 
 /* the circle which creates the head */
-.head {
+/* .head {
   width: 50%;
   padding-bottom: 50%;
   margin-bottom: 0;
@@ -113,9 +113,32 @@ p {
   background-color: none;
   border-radius: 40em;
   transition: transform 0.3s ease;
-  /* temp border */
+  /* temp border 
   border: 1px darkgreen solid;
 }
+  */
+
+
+
+#personhead {
+  justify-self: center;
+  height: 100%;
+  width: 60%;
+  transition: transform 0.3s ease;
+  border: 1px darkgreen solid;
+}
+
+#robothead {
+  justify-self: center;
+  height: 100%;
+  width: 60%;
+  transition: transform 0.3s ease;
+  /* temp border */
+  border: 1px darkgreen solid;
+  padding-top: 30px;
+}
+
+
 
 /* body portion, underneath the head */
 .enlarge {
@@ -186,9 +209,12 @@ p {
 }
 
 .information-section {
-  background-color: var(--clr);
+  /*background-color: var(--clr); */
   color: white;
   display: flex;
+  background-color: rgb(204, 204, 204, .5);
+  border-radius: 12px;
+  padding-left: 10px;
   width: 80%;
   height: 175px;
   margin: 5px;
@@ -234,37 +260,13 @@ p {
   margin: 5px;
   cursor: pointer;
 }
-/* k section */
-#types-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
-.sub-title ul il h2 p {
-  background-color: var(--clr);
+/* k section */
+.sub-title {
   color: white;
-  display: flex;
-  width: 80%;
-  height: 175px;
-  margin: 5px;
-  transform: translateX(400%);
-  transition: transform 0.8s ease;
   border: 1px red solid;
 }
 
-.types-section:nth-of-type(even) {
-  transform: translateX(-400%);
-  width: 80%;
-  font-size: 1.5vw;
-}
-
-.types-section:not(:first-of-type):nth-of-type(odd) {
-  transform: translateX(400%);
-  width: 80%;
-  font-size: 1.5vw;
-}
 #types-start {
   font-size: 4vw;
   font-weight: bold;
