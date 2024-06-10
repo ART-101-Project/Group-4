@@ -267,11 +267,9 @@ p {
   border: 1px red solid;
 }
 
-#types-container p {
+p {
   color: white;
-  border: 1px red solid;
 }
-
 
 #types-start {
   font-size: 4vw;
