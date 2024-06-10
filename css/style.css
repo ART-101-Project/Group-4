@@ -195,6 +195,7 @@ p {
   transform: translateX(400%);
   transition: transform 0.8s ease;
   border: 1px red solid;
+  padding-bottom: 8px;
 }
 
 .information-section:nth-of-type(even) {
@@ -236,6 +237,7 @@ p {
 
 #types-container {
   display: flex;
+<<<<<<< Updated upstream
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -244,3 +246,23 @@ p {
 
 
  
+=======
+  width: 80%;
+  height: 175px;
+  margin: 5px;
+  transform: translateX(400%);
+  transition: transform 0.8s ease;
+  border: 1px red solid;
+}  
+
+.aitypes {
+  text-align: center;
+  font-size: 120%;
+  color: white;
+  border: 2px dotted;
+  border-radius: 7px;
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+>>>>>>> Stashed changes
