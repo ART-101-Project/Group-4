@@ -52,11 +52,6 @@ p {
   z-index: 1;
 }
 
-.popup img {
-  display: flex;
-  width: 20%;
-}
-
 #temp {
   padding: 10%;
 }
@@ -233,4 +228,3 @@ p {
   margin: 5px;
   cursor: pointer;
 }
-
