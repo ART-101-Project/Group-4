@@ -242,7 +242,7 @@ p {
   align-items: center;
 }
 
-.types-section {
+.sub-title ul il h2 p {
   background-color: var(--clr);
   color: white;
   display: flex;
