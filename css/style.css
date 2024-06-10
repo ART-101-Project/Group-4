@@ -38,60 +38,40 @@ p {
   font-size: 3vw;
 }
 
-/* popup elements: sizing, arrangement (z-index) */
+/* popup elements: sizing, arrangement (z-index) CENTERING FROM CHATGPT.*/
 #popup {
   display: none;
-  position: absolute;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 100px;
-  margin-left: 20px;
-  justify-content: center;
-  align-items: center;
-  transform: translate(75%);
+  color: white;
+  position: absolute; /* Use fixed positioning to keep it in the middle of the screen */
+  top: 30%; /* Position it 50% down from the top */
+  left: 50%; /* Position it 50% from the left */
+  transform: translate(-50%, -50%); /* Center the popup */
+  background-color: rgba(
+    204,
+    204,
+    204,
+    0.5
+  ); /* Adjusted the background color syntax */
+  padding: 3%;
+  border-radius: 20px;
   z-index: 3;
 }
+
 .element {
   display: inline-block;
   margin: 10px;
   padding: 20px;
-  border: 1px solid #000;
   cursor: pointer;
 }
 .elementRobot {
   display: inline-block;
   margin: 10px;
   padding: 20px;
-  border: 1px solid #000;
   cursor: pointer;
 }
-/* #container-popup {
-  display: flex;
-}
-
-.popup {
-  flex: 1;
-  display: none;
-  position: absolute;
-  padding: 10px;
-  padding-left: 5%;
-  z-index: 1;
-}
-
-.popup img {
-  display: flex;
-  width: 20%;
-} */
 
 #temp {
   padding: 10%;
-}
-
-.hover-element {
-  display: inline-block;
-  padding: 10px;
-  border: 1px solid #ccc;
-  cursor: pointer;
 }
 
 /* People Portion */
@@ -106,8 +86,6 @@ p {
   text-align: center;
   align-items: center;
   justify-content: center;
-  /* temp border */
-  border: 1px red solid;
 }
 
 /* individual people (two seperate buttons merged together so there could be a gap between head and body */
@@ -115,8 +93,6 @@ p {
   position: relative;
   flex: 1;
   z-index: 2;
-  /* temp border */
-  border: 1px blue solid;
 }
 
 /* another box over people which enlarges the head, can be removed */
@@ -125,33 +101,13 @@ p {
   margin-bottom: 1px;
   cursor: pointer;
   transition: transform 0.3s ease;
-  /* temp border */
-  border: 1px purple solid;
 }
-
-/* the circle which creates the head */
-/* .head {
-  width: 50%;
-  padding-bottom: 50%;
-  margin-bottom: 0;
-  cursor: pointer;
-  border: none;
-  background-color: none;
-  border-radius: 40em;
-  transition: transform 0.3s ease;
-  /* temp border 
-  border: 1px darkgreen solid;
-}
-  */
-
-
 
 #personhead {
   justify-self: center;
   height: 100%;
   width: 60%;
   transition: transform 0.3s ease;
-  border: 1px darkgreen solid;
 }
 
 #robothead {
@@ -159,12 +115,8 @@ p {
   height: 100%;
   width: 60%;
   transition: transform 0.3s ease;
-  /* temp border */
-  border: 1px darkgreen solid;
   padding-top: 30px;
 }
-
-
 
 /* body portion, underneath the head */
 .enlarge {
@@ -175,8 +127,6 @@ p {
   background-color: none;
   border-radius: 40em 40em 60em 60em;
   transition: transform 0.3s ease;
-  /* temp border */
-  border: 1px darkblue solid;
 }
 /* enlarges both head and body */
 .double:hover {
@@ -193,7 +143,7 @@ p {
   padding-left: 5%;
   background-color: white;
   color: black;
-  font-size: 10vw; /* Responsive font size */
+  font-size: 8vw; /* Responsive font size */
   font-weight: bold;
   mix-blend-mode: screen; /* This makes the cutout text possible */
 }
@@ -238,7 +188,9 @@ p {
   /*background-color: var(--clr); */
   color: white;
   display: flex;
-  background-color: rgb(204, 204, 204, .5);
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(204, 204, 204, 0.5);
   border-radius: 12px;
   padding-left: 10px;
   width: 80%;
@@ -246,25 +198,29 @@ p {
   margin: 5px;
   transform: translateX(400%);
   transition: transform 0.8s ease;
-  border: 1px red solid;
   padding-bottom: 8px;
 }
 
 .information-section:nth-of-type(even) {
   transform: translateX(-400%);
   width: 80%;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
 }
 
 .information-section:not(:first-of-type):nth-of-type(odd) {
   transform: translateX(400%);
   width: 80%;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
 }
 
 #information-start {
-  font-size: 4vw;
+  font-size: 3vw;
+  padding-top: 10px;
   font-weight: bold;
+}
+
+#information-container p {
+  padding: 10px;
 }
 
 .slide-left {
@@ -287,7 +243,6 @@ p {
   cursor: pointer;
 }
 
-
 .sub-title {
   color: white;
   border: 1px red solid;
@@ -299,69 +254,68 @@ p {
   margin: auto;
 }
 
-h2 {  
-    border: 1px red solid; 
-    text-align: center; 
-    font-size: 120%;
-    border-style: solid;
-    border-radius: 7px;
-    width: 80%    
-  }
+h2 {
+  border: 1px red solid;
+  text-align: center;
+  font-size: 120%;
+  border-style: solid;
+  border-radius: 7px;
+  width: 80%;
+}
 
-h3 {  
-    border: 1px red solid; 
-    text-align: center; 
-    font-size: 120%;
-    border-style: solid;
-    border-radius: 7px;
-    width: 80%    
-  }
+h3 {
+  border: 1px red solid;
+  text-align: center;
+  font-size: 120%;
+  border-style: solid;
+  border-radius: 7px;
+  width: 80%;
+}
 
-h4 {  
-    border: 1px red solid; 
-    text-align: center; 
-    font-size: 120%;
-    border-style: solid;
-    border-radius: 7px;
-    width: 80%    
-  }
+h4 {
+  border: 1px red solid;
+  text-align: center;
+  font-size: 120%;
+  border-style: solid;
+  border-radius: 7px;
+  width: 80%;
+}
 
-h5 {  
-    border: 1px red solid; 
-    text-align: center; 
-    font-size: 120%;
-    border-style: solid;
-    border-radius: 7px;
-    width: 80%    
-  }
+h5 {
+  border: 1px red solid;
+  text-align: center;
+  font-size: 120%;
+  border-style: solid;
+  border-radius: 7px;
+  width: 80%;
+}
 
-h6 {  
-    border: 1px red solid; 
-    text-align: center; 
-    font-size: 120%;
-    border-style: solid;
-    border-radius: 7px;
-    width: 80%    
-  }
+h6 {
+  border: 1px red solid;
+  text-align: center;
+  font-size: 120%;
+  border-style: solid;
+  border-radius: 7px;
+  width: 80%;
+}
 
-h7 {  
-    border: 1px red solid; 
-    text-align: center; 
-    font-size: 120%;
-    border-style: solid;
-    border-radius: 7px;
-    width: 80%    
-  }
+h7 {
+  border: 1px red solid;
+  text-align: center;
+  font-size: 120%;
+  border-style: solid;
+  border-radius: 7px;
+  width: 80%;
+}
 
-h8 {  
-    border: 1px red solid; 
-    text-align: center; 
-    font-size: 120%;
-    border-style: solid;
-    border-radius: 7px;
-    width: 80%    
-  }
-
+h8 {
+  border: 1px red solid;
+  text-align: center;
+  font-size: 120%;
+  border-style: solid;
+  border-radius: 7px;
+  width: 80%;
+}
 
 #types-start {
   font-size: 4vw;
@@ -372,8 +326,6 @@ h8 {
   transform: translateX(-200%);
 }
 
-
- 
 /* =======
   width: 80%;
   height: 175px;
