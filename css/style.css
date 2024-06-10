@@ -301,12 +301,11 @@ p {
   margin: auto;
 }
 
-h2{
-    background-color: rgb(204, 204, 204, .5);  
+h2{  
     border: 1px red solid; 
     text-align: center; 
     font-size: 120%;
-    border: 5px dashed;
+    border-style: solid;
     border-radius: 7px;
     width: 80%    
   }
