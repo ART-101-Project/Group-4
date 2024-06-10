@@ -123,9 +123,23 @@ function checkBoxes() {
 // });
 
 var personFacts = {
-  fact1: "True",
-  fact2: "True",
-  fact3: "True",
+  fact1:
+    "AI is only as good as the data it is trained on, so if the data is biased, the AI will also be biased.",
+  fact2:
+    "Self-driving cars rely on AI to navigate and make decisions on the road.",
+  fact3:
+    "AI algorithms can analyse images and create new artwork based on patterns and styles that it has learned.",
+  fact4:
+    "Many people prefer to talk to AI bots with female voices, such as Alexa and Siri.",
+  fact5:
+    "Some say that AI could become smarter than humans and surpass human intelligence by 2045.",
+  fact6:
+    "AI could affect the wealth gap, economic disparity, and consumer choices, and have a huge impact on society's economic progress.",
+  fact7:
+    "AI robots can rebuild themselves quickly and easily if they malfunction or have a fault.",
+  fact8: "WesBot is a digital copy of Wes' brain.",
+  fact9:
+    "AI-powered “animals” are now joining the growing list of robots on the market.",
 };
 
 var robotFacts = {
