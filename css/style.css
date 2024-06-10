@@ -234,14 +234,4 @@ p {
   cursor: pointer;
 }
 
-.p {
-   background-color: var(--clr);
-  color: white;
-  display: flex;
-  width: 80%;
-  height: 175px;
-  margin: 5px;
-  transform: translateX(400%);
-  transition: transform 0.8s ease;
-  border: 1px red solid;
-}  
+ 
