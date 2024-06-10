@@ -237,7 +237,6 @@ p {
 
 #types-container {
   display: flex;
-<<<<<<< Updated upstream
   flex-direction: column;
   justify-content: center;
   align-items: center;
