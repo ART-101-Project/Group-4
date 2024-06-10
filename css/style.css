@@ -237,7 +237,6 @@ p {
 
 #types-container {
   display: flex;
-<<<<<<< Updated upstream
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -277,9 +276,7 @@ p {
 }
 
 
-
- 
-=======
+/* got fucked up during merge. what was this for?
   width: 80%;
   height: 175px;
   margin: 5px;
@@ -287,6 +284,7 @@ p {
   transition: transform 0.8s ease;
   border: 1px red solid;
 }  
+  */
 
 .aitypes {
   text-align: center;
@@ -298,4 +296,3 @@ p {
   display: block;
   margin: auto;
 }
->>>>>>> Stashed changes

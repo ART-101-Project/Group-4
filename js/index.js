@@ -92,12 +92,42 @@ function checkBoxes() {
 
 
 
-var robot = tracery.createGrammar ({
+/* var robot = tracery.createGrammar ({
   'fact': ['fact 1', 'fact 2', 'fact 3'],
   'buzzword': ['buzzword 1', 'buzzword 2', 'buzzword 3'],
   'robotnoise': ['noise 1', 'noise 2', 'noise 3'],
   'text' : ['Robots are #buzzword# because #fact#. #robotnoise# !']
 });
 
-console.log(robot);
+console.log(robot); */
 
+
+/* this is an array that we will put facts about AI's shortcomings into. the 'people' on the homepage will then cycle through these facts. */
+
+//setting up array
+let personFacts = {
+  fact1 : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non nisi est sit amet facilisis magna etiam tempor.',
+  fact2 : 'Elit duis tristique sollicitudin nibh sit amet. At in tellus integer feugiat scelerisque varius. Tortor posuere ac ut consequat semper. Netus et malesuada fames ac turpis egestas sed tempus.',
+  fact3 : 'Odio ut enim blandit volutpat maecenas volutpat. Sit amet consectetur adipiscing elit pellentesque habitant morbi. Sed faucibus turpis in eu mi bibendum neque egestas.',
+  //more can be added
+};
+
+//create function for cycling through said array
+
+function cycleFacts(obj, cycles) {
+  //keys is the text
+  const keys = Object.keys(obj);
+  //makes length of cycle the numbers of keys
+  let length = keys.length;
+  //logs result
+  let result = [];
+  //this begins the cycle depending on number input
+  for (let i = 0; i < cycles; i++) {
+      const key = keys[i % length];
+      result.push(obj[key]);
+  }
+  return result;
+}
+//test (not working...)
+cycledFacts(personFacts, 10);
+console.log(cycledFacts);
