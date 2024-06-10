@@ -47,9 +47,15 @@ p {
   flex: 1;
   display: none;
   position: absolute;
-  padding: 10px;
-  padding-left: 5%;
+  padding: 20px;
   z-index: 1;
+  border-radius: 15px;
+  background-color: white;
+  width: 20%;
+  margin: auto;
+  margin-left: 3%;
+  align-content: center;
+  text-align: center;
 }
 
 .popup img {

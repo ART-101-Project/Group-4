@@ -88,18 +88,6 @@ function checkBoxes() {
   });
 }
 
-/*tracery*/
-
-
-
-/* var robot = tracery.createGrammar ({
-  'fact': ['fact 1', 'fact 2', 'fact 3'],
-  'buzzword': ['buzzword 1', 'buzzword 2', 'buzzword 3'],
-  'robotnoise': ['noise 1', 'noise 2', 'noise 3'],
-  'text' : ['Robots are #buzzword# because #fact#. #robotnoise# !']
-});
-
-console.log(robot); */
 
 
 /* this is an array that we will put facts about AI's shortcomings into. the 'people' on the homepage will then cycle through these facts. */
@@ -112,23 +100,28 @@ let personFacts = {
   //more can be added
 };
 
-//create function for cycling through said array
 
-function cycledFacts(obj, cycles) {
-  //keys is the text
-  const keys = Object.keys(obj);
-  //makes length of cycle the numbers of keys
-  let length = keys.length;
-  //logs result
-  let result = [];
-  //this begins the cycle depending on number input
-  for (let i = 0; i < cycles; i++) {
-      const key = keys[i % length];
-      result.push(obj[key]);
+  function getRandomFact() {
+    var values = Object.values(personFacts);
+    return values[Math.floor(Math.random() * values.length)];
+
   }
-  return result;
-}
-//test (not working...)
-cycledFacts(personFacts, 10);
-console.log(cycledFacts);
 
+ /* $('#element').hover(
+    function() {
+      var randomFact = getRandomFact();
+      $('#popup').text(personFacts[getRandomFact]).show();
+    },
+    function() {
+      $('#popup').hide();
+    }
+  ); */
+
+document.getElementById("element").addEventListener("mouseover", function () {
+  var randomFact = getRandomFact();
+  $('#popup').append(randomFact).html();
+});
+
+document.getElementById("element").addEventListener("mouseout", function () {
+  $('#popup').empty();
+});
