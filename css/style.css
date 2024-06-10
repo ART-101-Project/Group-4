@@ -290,7 +290,15 @@ p {
 /* k section */
 .sub-title {
   color: white;
+  background-color: rgb(204, 204, 204, .5);
   border: 1px red solid;
+  text-align: center;
+  font-size: 120%;
+  border: 5px dashed;
+  border-radius: 7px;
+  width: 80%;
+  display: block;
+  margin: auto;
 }
 
 #types-start {
@@ -304,23 +312,11 @@ p {
 
 
  
-=======
+/* =======
   width: 80%;
   height: 175px;
   margin: 5px;
   transform: translateX(400%);
   transition: transform 0.8s ease;
   border: 1px red solid;
-}  
-
-.aitypes {
-  text-align: center;
-  font-size: 120%;
-  color: white;
-  border: 2px dotted;
-  border-radius: 7px;
-  width: 80%;
-  display: block;
-  margin: auto;
-}
->>>>>>> Stashed changes
+}  */
