@@ -115,6 +115,7 @@ let personFacts = {
 //create function for cycling through said array
 
 function cycleFacts(obj, cycles) {
+function cycledFacts(obj, cycles) {
   //keys is the text
   const keys = Object.keys(obj);
   //makes length of cycle the numbers of keys
@@ -130,4 +131,5 @@ function cycleFacts(obj, cycles) {
 }
 //test (not working...)
 cycledFacts(personFacts, 10);
-console.log(cycledFacts);
+console.log(cycledFacts);console.log(cycledFacts);
+
