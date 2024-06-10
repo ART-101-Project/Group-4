@@ -9,6 +9,7 @@
  * Licensed under MIT
  */
 
+// initializes porperties for parameters that can be changed within index.js, this helps alter different variables; it makes the "interface" possible
 var NodesJs = function (parameters) {
   t_NodesJs = this;
   t_NodesJs.id = parameters.id;
@@ -34,26 +35,31 @@ var NodesJs = function (parameters) {
     ? parameters.pointerCircleRadius
     : 150;
 
+  // variables for canvas, context, and dimensions
   var canvas;
   var ctx;
   var cw;
   var ch;
 
+  // time tracking variables; t0 is marked with current timestamp and dt will store information (helps with smoother animation)
   var t0 = Date.now();
   var dt = 0;
 
+  // array to hold node information
   t_NodesJs.nodes = [];
+
+  // method to set canvas width which is defined by parameters set in index.js file
 
   t_NodesJs.setWidth = function (width) {
     canvas.width = width;
     cw = width;
   };
-
+  // method to set canvas height which is defined by parameters set in index.js file
   t_NodesJs.setHeight = function (height) {
     canvas.height = height;
     ch = height;
   };
-
+  // method to place nodes randomly within the canvas
   t_NodesJs.placeNodes = function (number) {
     t_NodesJs.nodes = [];
 
@@ -66,7 +72,7 @@ var NodesJs = function (parameters) {
       ]);
     }
   };
-
+  // helper functions to determine the sign of a number (positive or negative)
   var isPositive = function (num) {
     return num >= 0;
   };
@@ -74,7 +80,7 @@ var NodesJs = function (parameters) {
   var isNetagive = function (num) {
     return num <= -1;
   };
-
+  // event listener for mouse movement to adjust postion of nodes based on proximity (combining when they get near each other)
   t_NodesJs.pointerCircleRadius &&
     window.addEventListener("mousemove", function (event) {
       if (!t_NodesJs.nodes.length) {
@@ -123,6 +129,7 @@ var NodesJs = function (parameters) {
       });
     });
 
+  // event listener to start animation loop
   window[window.addEventListener ? "addEventListener" : "attachEvent"](
     window.addEventListener ? "load" : "onload",
     function () {
@@ -137,11 +144,12 @@ var NodesJs = function (parameters) {
 
       t_NodesJs.placeNodes(t_NodesJs.number);
 
+      // animation step function which repeats so it can update and redraw the animation accordingly
       var step = function () {
         window.requestAnimationFrame(step);
 
         ctx.clearRect(0, 0, cw, ch);
-
+        // background color transition which makes nobg false after initially rendered
         if (!t_NodesJs.nobg) {
           var r = Math.floor(
             ((Math.sin(
@@ -179,11 +187,11 @@ var NodesJs = function (parameters) {
           ctx.fillRect(0, 0, cw, ch);
           ctx.fill();
         }
-
+        // SPAWN N DRAW MORE NODES!!
         t_NodesJs.nodes.forEach(function (_node, _node_i) {
           _node[0] += Math.cos(_node[2]) * t_NodesJs.speed * (dt / 1000.0);
           _node[1] += Math.sin(_node[2]) * t_NodesJs.speed * (dt / 1000.0);
-
+          // wrap around canvas edges
           if (_node[0] < 0) {
             _node[0] = cw + (_node[0] % cw);
           }
@@ -214,7 +222,7 @@ var NodesJs = function (parameters) {
           ctx.fill();
 
           _node[3] = [];
-
+          // THE LINES THAT CONNECT EACH NODE!
           t_NodesJs.nodes.forEach(function (_node2, _node2_i) {
             if (_node_i == _node2_i) {
               return true;
