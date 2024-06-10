@@ -290,18 +290,12 @@ p {
 
 .sub-title {
   color: white;
-  border: 1px red solid;
   text-align: center;
   font-size: 120%;
-  border-radius: 7px;
-  width: 80%;
-  display: block;
-  margin: auto;
 }
 
 h2 {  
-    border: 1px red solid; 
-    text-align: center; 
+    border: 1px red solid;  
     font-size: 120%;
     border-style: solid;
     border-radius: 7px;
