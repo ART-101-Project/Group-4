@@ -338,27 +338,19 @@ h6 {
   }
 
 h7 {  
-    color: white;
-    background-color: rgb(204, 204, 204, .5);    
+    border: 1px red solid;   
     font-size: 120%;
     border-style: solid;
     border-radius: 7px;
     width: 80% 
-    border-radius: 7px;
-    display: block;
-    margin: auto; 
 }
 
 h8 {  
-    color: white;
-    background-color: rgb(204, 204, 204, .5);    
+    border: 1px red solid;   
     font-size: 120%;
     border-style: solid;
     border-radius: 7px;
-    width: 80% 
-    border-radius: 7px;
-    display: block;
-    margin: auto; 
+    width: 80%  
   }
 
 
