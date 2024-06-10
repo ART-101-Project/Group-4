@@ -142,17 +142,23 @@ var personFacts = {
     "AI-powered “animals” are now joining the growing list of robots on the market.",
 };
 
-var robotFacts = {
-  fact1: "False",
-  fact2: "False",
-  fact3: "False",
-};
+//this function takes all parts of an object's values and puts them into an array
+function splitObjectValues(obj) {
+  return Object.values(obj).flatMap((value) =>
+    typeof value === "string" ? value.split(" ") : []
+  );
+}
 
+//var robotFacts performs this function with personFacts
+var robotFacts = splitObjectValues(personFacts);
+
+//getRandomFact cycles through personFacts' values
 function getRandomFact(facts) {
   var values = Object.values(facts);
   return values[Math.floor(Math.random() * values.length)];
 }
 
+//when person or robot is hovered over by a mouse, a popup with facts will appear
 $(document).ready(function () {
   $(".element").hover(
     function (event) {
@@ -168,12 +174,33 @@ $(document).ready(function () {
     }
   );
 
-  $(".elementRobot").hover(
+  /*  $(".elementRobot").hover(
     function (event) {
       var randomFact = getRandomFact(robotFacts);
       // debug
       console.log("Random Fact (Robot):", randomFact);
       $("#popup").text(randomFact).css({
+        display: "block",
+      });
+    },
+    function () {
+      $("#popup").hide();
+    }
+  ); */
+
+  $(".elementRobot").hover(
+    function (event) {
+      const shuffled = robotFacts.sort(() => 0.5 - Math.random());
+
+      // Get sub-array of first n elements after shuffled
+      let selected = shuffled.slice(0, 10);
+
+      robotString = selected.toString();
+
+      robotWord = robotString.replace(/,/g, " ");
+      console.log("Random Robot String: ", robotWord);
+
+      $("#popup").text(robotWord).css({
         display: "block",
       });
     },
