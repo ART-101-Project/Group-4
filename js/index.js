@@ -88,16 +88,83 @@ function checkBoxes() {
   });
 }
 
-/*tracery*/
+// Sav's random fact generator
+// var personFacts = {
+//   fact1: "True",
+//   fact2: "True",
+//   fact3: "True",
+// };
 
+// var robotFacts = {
+//   fact1: "False",
+//   fact2: "False",
+//   fact3: "False",
+// };
 
+// function getRandomFact() {
+//   var values = Object.values(personFacts);
+//   return values[Math.floor(Math.random() * values.length)];
+// }
 
-var robot = tracery.createGrammar ({
-  'fact': ['fact 1', 'fact 2', 'fact 3'],
-  'buzzword': ['buzzword 1', 'buzzword 2', 'buzzword 3'],
-  'robotnoise': ['noise 1', 'noise 2', 'noise 3'],
-  'text' : ['Robots are #buzzword# because #fact#. #robotnoise# !']
+// $(document).ready(function () {
+//   $(".element").hover(
+//     function (event) {
+//       var randomFact = getRandomFact();
+//       // debug
+//       console.log("Random Fact:", randomFact);
+//       $("#popup").text(randomFact).css({
+//         display: "block",
+//       });
+//     },
+//     function () {
+//       $("#popup").hide();
+//     }
+//   );
+// });
+
+var personFacts = {
+  fact1: "True",
+  fact2: "True",
+  fact3: "True",
+};
+
+var robotFacts = {
+  fact1: "False",
+  fact2: "False",
+  fact3: "False",
+};
+
+function getRandomFact(facts) {
+  var values = Object.values(facts);
+  return values[Math.floor(Math.random() * values.length)];
+}
+
+$(document).ready(function () {
+  $(".element").hover(
+    function (event) {
+      var randomFact = getRandomFact(personFacts);
+      // debug
+      console.log("Random Fact (Person):", randomFact);
+      $("#popup").text(randomFact).css({
+        display: "block",
+      });
+    },
+    function () {
+      $("#popup").hide();
+    }
+  );
+
+  $(".elementRobot").hover(
+    function (event) {
+      var randomFact = getRandomFact(robotFacts);
+      // debug
+      console.log("Random Fact (Robot):", randomFact);
+      $("#popup").text(randomFact).css({
+        display: "block",
+      });
+    },
+    function () {
+      $("#popup").hide();
+    }
+  );
 });
-
-console.log(robot);
-

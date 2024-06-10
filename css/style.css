@@ -39,7 +39,33 @@ p {
 }
 
 /* popup elements: sizing, arrangement (z-index) */
-#container-popup {
+#popup {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 100px;
+  margin-left: 20px;
+  justify-content: center;
+  align-items: center;
+  transform: translate(75%);
+  z-index: 3;
+}
+.element {
+  display: inline-block;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+.elementRobot {
+  display: inline-block;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+/* #container-popup {
   display: flex;
 }
 
@@ -55,7 +81,7 @@ p {
 .popup img {
   display: flex;
   width: 20%;
-}
+} */
 
 #temp {
   padding: 10%;
