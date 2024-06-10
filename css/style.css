@@ -261,9 +261,14 @@ p {
   cursor: pointer;
 }
 /* k section */
-#types-container {
-  
+.sub-title h2 {
+  color: white;
 }
+
+
+
+
+
 #types-start {
   font-size: 4vw;
   font-weight: bold;
