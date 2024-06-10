@@ -288,19 +288,18 @@ p {
 }
 
 
-.sub-title {
-  color: white;
-  text-align: center;
-  font-size: 120%;
-}
 
-h2 {  
-    border: 1px red solid;  
+h2 { 
+    color: white;
+    background-color: rgb(204, 204, 204, .5);    
     font-size: 120%;
     border-style: solid;
     border-radius: 7px;
-    width: 80%    
-  }
+    width: 80% 
+    border-radius: 7px;
+    display: block;
+    margin: auto; 
+}
 
 h3 {  
     border: 1px red solid; 
