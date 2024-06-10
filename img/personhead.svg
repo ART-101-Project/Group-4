@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 208.12 165">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #faf7f8;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #707c88;
+      }
+
+      .cls-3 {
+        stroke: #faf7f8;
+      }
+
+      .cls-3, .cls-4, .cls-5 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3, .cls-5 {
+        stroke-width: 3px;
+      }
+
+      .cls-4 {
+        stroke-width: 5px;
+      }
+
+      .cls-4, .cls-5 {
+        stroke: #000;
+      }
+    </style>
+  </defs>
+  <g id="personhead">
+    <g>
+      <path class="cls-2" d="M184.19,83c0-44.18-35.59-80-79.5-80-37.54,0-68.99,26.2-77.32,61.41v-.07s-19.95-10.66-23.07,3.5c-3.11,14.16,1.91,30.3,6.4,30.73,4.49.43,16,0,16,0l.03.1c.47,2.38,1.06,4.73,1.73,7.03l.07.3v-.04c9.81,32.99,40.18,57.04,76.16,57.04,32.38,0,60.21-19.49,72.61-47.43l-.02.09s5.91,2.34,8.41,3.81,15.5,3.53,19.93-19.22c4.43-22.75-21.43-17.25-21.43-17.25Z"/>
+      <g>
+        <ellipse class="cls-4" cx="104.19" cy="82.5" rx="81.5" ry="80"/>
+        <ellipse class="cls-1" cx="138.19" cy="58" rx="7.5" ry="6.5" transform="translate(46.18 176.3) rotate(-74.9)"/>
+        <ellipse class="cls-1" cx="77.4" cy="50.74" rx="7.5" ry="6.5" transform="translate(8.24 112.25) rotate(-74.9)"/>
+        <path class="cls-3" d="M86.05,32.83c.64.67,10.63,5.93,11.13,21.3s-2.89,41.73-2.89,41.73"/>
+        <path class="cls-3" d="M88.19,94s18.08,5.94,20.98,6.25"/>
+        <path class="cls-3" d="M86.05,126.17c-2.67.48,11.35-5,36.65,2.09"/>
+        <g>
+          <path class="cls-4" d="M25.28,62.41S2.31,52.02,2.5,78.76s21.61,18.66,21.61,18.66"/>
+          <path class="cls-5" d="M22.69,75.47c-1,.03-8.8-5.63-8.8-5.63"/>
+        </g>
+        <g>
+          <path class="cls-4" d="M186.59,81.89s24.88-4.04,17.73,21.72-25.72,12.39-25.72,12.39"/>
+          <path class="cls-5" d="M185.69,95.17c.96.29,9.96-3.14,9.96-3.14"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
