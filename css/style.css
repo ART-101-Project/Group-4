@@ -262,31 +262,7 @@ p {
 }
 /* k section */
 #types-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--clr);
-  color: white;
-  display: flex;
-  width: 80%;
-  height: 175px;
-  margin: 5px;
-  transform: translateX(400%);
-  transition: transform 0.8s ease;
-  border: 1px red solid;
-}
-
-.types-section:nth-of-type(even) {
-  transform: translateX(-400%);
-  width: 80%;
-  font-size: 1.5vw;
-}
-
-.types-section:not(:first-of-type):nth-of-type(odd) {
-  transform: translateX(400%);
-  width: 80%;
-  font-size: 1.5vw;
+  
 }
 #types-start {
   font-size: 4vw;
