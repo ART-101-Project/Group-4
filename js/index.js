@@ -87,3 +87,17 @@ function checkBoxes() {
     }
   });
 }
+
+/*tracery*/
+
+
+
+var robot = tracery.createGrammar ({
+  'fact': ['fact 1', 'fact 2', 'fact 3'],
+  'buzzword': ['buzzword 1', 'buzzword 2', 'buzzword 3'],
+  'robotnoise': ['noise 1', 'noise 2', 'noise 3'],
+  'text' : ['Robots are #buzzword# because #fact#. #robotnoise# !']
+});
+
+console.log(robot);
+
