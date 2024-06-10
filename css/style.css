@@ -195,6 +195,7 @@ p {
   transform: translateX(400%);
   transition: transform 0.8s ease;
   border: 1px red solid;
+  padding-bottom: 8px;
 }
 
 .information-section:nth-of-type(even) {
@@ -233,9 +234,16 @@ p {
   margin: 5px;
   cursor: pointer;
 }
+/* k section */
+#types-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-.p {
-   background-color: var(--clr);
+.sub-title ul il h2 p {
+  background-color: var(--clr);
   color: white;
   display: flex;
   width: 80%;
@@ -244,4 +252,47 @@ p {
   transform: translateX(400%);
   transition: transform 0.8s ease;
   border: 1px red solid;
+}
+
+.types-section:nth-of-type(even) {
+  transform: translateX(-400%);
+  width: 80%;
+  font-size: 1.5vw;
+}
+
+.types-section:not(:first-of-type):nth-of-type(odd) {
+  transform: translateX(400%);
+  width: 80%;
+  font-size: 1.5vw;
+}
+#types-start {
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+.slide-left {
+  transform: translateX(-200%);
+}
+
+
+ 
+=======
+  width: 80%;
+  height: 175px;
+  margin: 5px;
+  transform: translateX(400%);
+  transition: transform 0.8s ease;
+  border: 1px red solid;
 }  
+
+.aitypes {
+  text-align: center;
+  font-size: 120%;
+  color: white;
+  border: 2px dotted;
+  border-radius: 7px;
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+>>>>>>> Stashed changes
